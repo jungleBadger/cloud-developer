@@ -70,6 +70,9 @@ functions:
         Action:
           - dynamodb:PutItem
         Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.TODOS_TABLE}
+    request:
+      schema:
+        application/json: ${file(src/schemas/todo-item-create.json)}
 
   UpdateTodo:
     handler: src/lambda/http/updateTodo.handler
@@ -85,6 +88,9 @@ functions:
           - dynamodb:UpdateItem
           - dynamodb:GetItem
         Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.TODOS_TABLE}
+    request:
+      schema:
+        application/json: ${file(src/schemas/todo-item-update.json
 
   DeleteTodo:
     handler: src/lambda/http/deleteTodo.handler
