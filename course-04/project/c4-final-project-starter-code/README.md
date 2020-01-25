@@ -243,29 +243,25 @@ npm run start
 
 This should start a development server with the React application that will interact with the serverless TODO application.
 
-# Postman collection
-
-An alternative way to test your API, you can use the Postman collection that contains sample requests. You can find a Postman collection in this project. To import this collection, do the following.
-
-Click on the import button:
-
-![Alt text](images/import-collection-1.png?raw=true "Image 1")
+## Screenshots
 
 
-Click on the "Choose Files":
 
-![Alt text](images/import-collection-2.png?raw=true "Image 2")
+### Auth0 service
 
-
-Select a file to import:
-
-![Alt text](images/import-collection-3.png?raw=true "Image 3")
+![Alt text](screenshots/auth0.jpg "Auth 0")
 
 
-Right click on the imported collection to set variables for the collection:
+### Serverless app
 
-![Alt text](images/import-collection-4.png?raw=true "Image 4")
+![Alt text](screenshots/serverlessapp.jpg "Serverless app")
 
-Provide variables for the collection (similarly to how this was done in the course):
 
-![Alt text](images/import-collection-5.png?raw=true "Image 5")
+### Dynamo items
+
+![Alt text](screenshots/dbitems.jpg "Dynamo items")
+
+
+### Bucket items
+
+![Alt text](screenshots/bucket.jpg "Bucket")
